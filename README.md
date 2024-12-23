@@ -1,0 +1,2 @@
+# renovate
+Shared Renovate configuration
