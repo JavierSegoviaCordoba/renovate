@@ -3,45 +3,23 @@
     'config:recommended',
     'helpers:pinGitHubActionDigests',
   ],
-  assignees: [
-    'JavierSegoviaCordoba',
-  ],
   assigneesFromCodeOwners: true,
   automerge: true,
   automergeType: 'pr',
   branchConcurrentLimit: 2,
   commitBodyTable: true,
-  packageRules: [
-    {
-      groupName: 'androidx.compose.*',
-      matchPackageNames: [
-        '/androidx.compose.*/',
-      ],
-    },
-    {
-      groupName: 'com.android.*',
-      matchPackageNames: [
-        '/com.android.*/',
-      ],
-    },
-    {
-      groupName: 'io.kotest.*',
-      matchPackageNames: [
-        '/io.kotest.*/',
-      ],
-    },
-    {
-      groupName: 'io.ktor.*',
-      matchPackageNames: [
-        '/io.ktor.*/',
-      ],
-    },
-  ],
+  gradle: {
+    ignorePaths: [
+      '**/test/**',
+      '**/testFixtures/**',
+      '**/testFunctional/**',
+      '**/testIntegration/**',
+      '**/*Test/**',
+      '**/test*/**',
+    ],
+  },
   platformAutomerge: true,
   prConcurrentLimit: 1,
   rebaseWhen: 'never',
-  reviewers: [
-    'JavierSegoviaCordoba',
-  ],
   reviewersFromCodeOwners: true,
 }
