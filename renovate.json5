@@ -18,6 +18,13 @@
       '**/test*/**',
     ],
   },
+  "packageRules": [
+    {
+      "matchManagers": ["github-actions"],
+      "matchPackagePatterns": ["^JavierSegoviaCordoba/[Aa]ctions/"],
+      "pinDigests": false
+    }
+  ],
   platformAutomerge: true,
   prConcurrentLimit: 1,
   rebaseWhen: 'never',
