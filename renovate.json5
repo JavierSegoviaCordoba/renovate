@@ -21,8 +21,8 @@
   "packageRules": [
     {
       "matchManagers": ["github-actions"],
-      "matchPackagePatterns": ["^JavierSegoviaCordoba/[Aa]ctions/"],
-      "pinDigests": false
+      "matchPackageNames": ["JavierSegoviaCordoba/**"],
+      "pinDigests": false,
     }
   ],
   platformAutomerge: true,
